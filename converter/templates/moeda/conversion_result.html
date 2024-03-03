@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Conversion Result</title>
+</head>
+<body>
+    <div class="mainbody">
+        <section id="title-section">
+            <div class="title__body">
+                <h1 class="title">Resultado da Conversão</h1>
+            </div>
+            <div class="section__body">
+                <form id="conversion-form">
+                    <div class="CoinFields">
+                        <p class="body__label">De: </p>
+                        <p class="body__result">{{ from_currency }}</p>
+                    </div>
+                    <div class="CoinFields">
+                        <p class="body__label">Para: </p>
+                        <p class="body__result">{{ to_currency }}</p>
+                    </div>
+                    <div class="CoinFields">
+                        <p class="body__label">Valor Inicial: </p>
+                        <p class="body__result">{{ amount }}</p>
+                    </div>
+                    <div class="CoinFields">
+                        <p class="body__label">Valor convertido: </p>
+                        <p class="body__result">{{ converted_amount }}</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+    
+</body>
+</html>

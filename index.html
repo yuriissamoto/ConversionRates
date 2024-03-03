@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Conversão Monetária</title>
+</head>
+<body>
+    <div class="mainbody">
+
+        <section id="title-section">
+            <div class="title__body">
+                <h1 class="title">Conversão Monetária</h1>
+                {% comment %} <div class="AboutMe__button">
+                    <a href="/img/cv/cv.pdf" class="AboutMeBtn">{{ __('locale.Table.CVBtn') }}</a>
+                </div> {% endcomment %}
+            </div>
+            <div class="section__body">
+                <div class="_body">
+                    
+                    <!-- Adicionando um botão com um evento de clique -->
+                    <div class="bodyIMG">
+                        <img src="{% static 'img/moeda.png' %}" alt="Minha Imagem">
+                    </div>
+                    
+                    <p class="body__p">Clique para começar</p>
+
+                    <div class="First__button">
+                        <button onclick="redirectToIndex()" class="FirstBtn">Iniciar</button>
+                    </div>
+                    
+                </div>
+            </div>
+               
+            
+            
+        </section>
+    </div>
+    
+
+    <script>
+        // Função para redirecionar para a página index
+        function redirectToIndex() {
+            // Redirecionar para a URL da página index
+            window.location.href = 'convert/';
+        }
+    </script>
+</body>
+</html>
