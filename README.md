@@ -6,7 +6,7 @@ Este é um projeto de API para conversão de moedas, onde você pode converter e
 Funcionalidades
 Converte entre as seguintes moedas: USD, BRL, EUR, BTC, ETH.
 Requisição simples utilizando parâmetros from, to e amount.
-Exemplo de requisição: ?from=BTC&to=EUR&amount=123.45 para converter 123.45 Bitcoin para Euros.
+Exemplo de requisição: ?from=USD&to=BRL&amount=123.45 para converter 123.45 Dolar para Real.
 
 
 Como Usar
