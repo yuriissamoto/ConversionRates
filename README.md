@@ -9,20 +9,20 @@ Requisição simples utilizando parâmetros from, to e amount.
 Exemplo de requisição: ?from=USD&to=BRL&amount=123.45 para converter 123.45 Dolar para Real.
 
 
-Como Usar
+Como Usar:
+
 1 - Clone o repositório:
-
+```
 git clone https://github.com/yuriissamoto/ConversionRates.git
+```
 
-2 - Instale as dependências:
-
-No terminal digite:
-
+2 - No terminal digite:
+```
 cd ConversionRates
-
-depois:
 docker-compose up --build
-Não esqueça de abrir o docker antes de executar esse comando.
+```
+
+A aplicação estará disponível na porta 8001: http://localhost:8001/
 
 
 Faça requisições para a API conforme necessário, utilizando os parâmetros De, Para e Valor.
