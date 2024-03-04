@@ -5,7 +5,7 @@ FROM python:3.9
 ENV PYTHONUNBUFFERED 1
 
 # Define o diretório de trabalho no contêiner
-WORKDIR 
+WORKDIR /code
 
 # Instala as dependências do projeto
 COPY requirements.txt .
