@@ -18,14 +18,10 @@ git clone https://github.com/yuriissamoto/ConversionRates.git
 
 No terminal digite:
 
-cd ConversionRates-main
+cd ConversionRates
 
 depois:
-pip install -r requirements.txt
-
-Inicie o servidor:
-python manage.py runserver
-Segure o CTRL e clique na url para entrar na pagina.
+docker-compose up --build
 
 Faça requisições para a API conforme necessário, utilizando os parâmetros De, Para e Valor.
 
