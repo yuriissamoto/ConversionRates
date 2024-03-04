@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./ConversionRates-main:/app/currency_converter
+      - ./ConversionRates:/app/currency_converter
     depends_on:
       - db
 
