@@ -1,13 +1,9 @@
 version: '3'
+
 services:
-  backend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  web:
+    build: .
     ports:
       - "8000:8000"
     volumes:
-      - ./currency_converter:/code
-    environment:
-      - DJANGO_SETTINGS_MODULE=currency_converter.settings
-      - DATABASE_URL=sqlite:///db.sqlite3
+      - .:/code
