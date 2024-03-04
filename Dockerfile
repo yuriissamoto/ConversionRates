@@ -1,18 +1,20 @@
-# Use a imagem base do Python
-FROM python:3
+# Use a imagem oficial do Python
+FROM python:3.9
 
-# Define a pasta de trabalho dentro do container
-WORKDIR /app
+# Define a variável de ambiente para evitar problemas com a saída padrão do Python
+ENV PYTHONUNBUFFERED 1
 
-# Copie o arquivo de requisitos e instale as dependências
+# Define o diretório de trabalho no contêiner
+WORKDIR /code
+
+# Instala as dependências do projeto
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# Copie o código do backend para a pasta de trabalho
-COPY .
+# Copia o código fonte para o contêiner
+COPY currency_converter/ .
 
-# Exponha a porta em que o servidor Django estará rodando
-EXPOSE 8000
-
-# Comando para executar a aplicação Django
+# Comando para executar as migrações e iniciar o servidor
+CMD ["python", "manage.py", "makemigrations"]
+CMD ["python", "manage.py", "migrate"]
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
