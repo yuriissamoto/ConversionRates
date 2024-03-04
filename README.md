@@ -22,6 +22,8 @@ cd ConversionRates
 
 depois:
 docker-compose up --build
+Não esqueça de abrir o docker antes de executar esse comando.
+
 
 Faça requisições para a API conforme necessário, utilizando os parâmetros De, Para e Valor.
 
