@@ -2,3 +2,4 @@ django
 djangorestframework
 requests
 --upgrade pip
+python:3.8
