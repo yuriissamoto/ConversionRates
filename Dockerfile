@@ -12,7 +12,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copia o código fonte para o contêiner
-COPY currency_converter/ .
+COPY ConversionRates/ .
 
 # Comando para executar as migrações e iniciar o servidor
 CMD ["python", "manage.py", "makemigrations"]
